@@ -1,0 +1,17 @@
+.block {
+    padding: 40px 30px;
+    border: 1px solid #000;
+    border-bottom-width: 3px;
+    border-left-width: 2px;
+}
+
+#first-block {
+    border-color: red;
+    width: 20%;
+    height: 400px;
+}
+
+#second-block {
+    border-color: green;
+    width: 30%;
+}

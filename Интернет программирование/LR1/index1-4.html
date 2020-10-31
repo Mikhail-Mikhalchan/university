@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <title>Моя первая веб-страница</title>
+        <style>
+            .table {
+                border: 1px solid #888;
+                border-collapse: collapse;
+                text-align: left;
+            }
+            
+            .table td, .table th {
+                border: 1px solid #888;
+                padding: 10px;
+            }
+            
+            .table th {
+                background-color: #DDD;
+            }
+            
+            .table tbody tr:hover {
+                background-color: #EEE;
+            }
+            
+            .table tbody tr td:not(:first-child) {
+                text-align: center;
+            }
+            
+            .table thead tr:first-child {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="5">Информация о продуктах</th>
+                </tr>
+                <tr>
+                    <th>Продукты</th>
+                    <th>Белки</th>
+                    <th>Жиры</th>
+                    <th>Углеводы</th>
+                    <th>Калории</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Вареники с картошкой</td>
+                    <td>5.90</td>
+                    <td>14.10</td>
+                    <td>28.60</td>
+                    <td>269.00</td>
+                </tr>
+                <tr>
+                    <td>Печенье сдобное</td>
+                    <td>10.40</td>
+                    <td>5.20</td>
+                    <td>76.80</td>
+                    <td>458.00</td>
+                </tr>
+                <tr>
+                    <td>Пирожное песочное с фруктовой начинкой</td>
+                    <td>5.10</td>
+                    <td>18.50</td>
+                    <td>62.60</td>
+                    <td>435.00</td>
+                </tr>
+                <tr>
+                    <td>Пирожное слоеное с кремом</td>
+                    <td>5.40</td>
+                    <td>38.60</td>
+                    <td>46.40</td>
+                    <td>555.00</td>
+                </tr>
+                <tr>
+                    <td>Пряники</td>
+                    <td>4.80</td>
+                    <td>2.80</td>
+                    <td>77.70</td>
+                    <td>350.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
