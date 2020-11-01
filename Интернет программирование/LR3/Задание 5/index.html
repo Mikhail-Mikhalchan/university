@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <title>Задание 5 | Лабораторная 3</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section class="registration">
+            <div class="disclaimer">
+                Помимо основного задания, добавлена валидация для всех полей формы.
+            </div>
+            <form class="form">
+                <div class="input-group">
+                    <input class="input-group__input" type="text" placeholder="Ваше имя" name="Name" required/>
+                    <span class="input-group__error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input class="input-group__input" type="email" placeholder="Ваш email" name="Email" required/>
+                    <span class="input-group__error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input class="input-group__input" type="tel" placeholder="Ваш телефон" name="PhoneNumber" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"/>
+                    <span class="input-group__error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input id="password" class="input-group__input" type="password" placeholder="Пароль" name="Password" required/>
+                    <span class="input-group__error-message"></span>
+                </div>
+                <div class="input-group">
+                    <input id="confirm-password" class="input-group__input" type="password" placeholder="Пароль еще раз" name="ConfirmPassword" required/>
+                    <span class="input-group__error-message"></span>
+                </div>
+                
+                <button class="button-submit" type="submit">Сохранить</button>
+            </form>
+        </section>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", () => {
+                var password = document.getElementById("password");
+                var confirmPassword = document.getElementById("confirm-password");
+
+                password.addEventListener("input", validatePassword);
+                confirmPassword.addEventListener("input", validatePassword);
+
+                function validatePassword() {
+                    if(password.value === confirmPassword.value){
+                       password.setCustomValidity("");
+                       confirmPassword.setCustomValidity("");
+                    }
+                    else {
+                        const errorMessage = "Пароли должны совпадать"
+
+                        password.setCustomValidity(errorMessage);
+                        confirmPassword.setCustomValidity(errorMessage);
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
