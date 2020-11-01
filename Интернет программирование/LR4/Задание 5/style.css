@@ -1,0 +1,14 @@
+#page {
+    width: 100vw;
+    height: 100vh;
+}
+/* Светлая тема */
+.light-theme {
+    color: #333;
+    background-color: #EAE9F2;
+}
+/* Тёмная тема */
+.dark-theme {
+    color: #F2F2F2;
+    background-color: #171617;
+}
