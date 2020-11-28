@@ -1,0 +1,14 @@
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    overflow-x: auto;
+}
+
+.gallery img {
+    margin: 5px;
+    width: auto;
+    height: 250px;
+}
