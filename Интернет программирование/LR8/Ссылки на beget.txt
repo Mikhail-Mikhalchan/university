@@ -1,0 +1,4 @@
+1,2 - http://g910870e.beget.tech/LR8/guestbook/index.php
+3 - http://g910870e.beget.tech/LR8/stat/index.php
+4 - http://g910870e.beget.tech/LR8/workers/index.php
+5 - http://g910870e.beget.tech/LR8/search/index.php
