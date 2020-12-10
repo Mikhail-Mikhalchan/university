@@ -1,0 +1,33 @@
+.panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-right: 5px;
+}
+
+.strikethrough-text {
+    text-decoration: line-through;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.red-text {
+    color: red;
+}
+
+.paragraph {
+    padding: 10px;
+}

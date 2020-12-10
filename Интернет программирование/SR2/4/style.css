@@ -1,0 +1,21 @@
+.panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-right: 5px;
+}
+
+.paragraph {
+    padding: 10px;
+}
