@@ -1,0 +1,90 @@
+.pizza-designer {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "header header" "ingredient-list composition"; 
+}
+
+.pizza-designer__ingredient-list {
+    grid-area: ingredient-list;
+}
+
+.pizza-designer__composition {
+    grid-area: composition;
+}
+
+.pizza-designer__header {
+    grid-area: header;
+    color: #AC0018;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.pizza-designer__ingredient-type-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+.pizza-composition__header {
+    font-weight: bold;
+    color: #444;
+}
+
+.pizza-composition__total-wrap {
+    font-weight: bold;
+    color: #444;
+}
+
+.pizza-composition__total {
+    color: #057905;
+}
+
+.pizza-composition__ingredients {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: #444;
+}
+
+.pizza-designer__ingredient-type {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.pizza-ingredient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    font-size: 14px;
+    color: #057905;
+}
+
+.pizza-ingredient__image-wrap {
+    border-radius: 50%;
+    border: 3px solid #E9E9E9;
+    overflow: hidden;
+}
+
+.pizza-ingredient__image-wrap:hover {
+    cursor: pointer;
+}
+
+.pizza-ingredient__image  {
+    object-fit: cover;
+    width: 75px;
+    height: 75px;
+}
+
+.pizza-ingredient-is-active .pizza-ingredient__image-wrap {
+    border-color: #07A907;
+}
+

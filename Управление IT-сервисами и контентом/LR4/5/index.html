@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <main role="main" class="pt-3 pb-3">
+                <div style="max-width: 500px;">
+                    <div class="input-group input-group-sm mb-3">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="countries">Табельный номер сотрудника</label>
+                      </div>
+                      <input class="form-control" placeholder="Введите табельный номер" id="tabn-search-input">
+                      <div class="input-group-append">
+                        <button class="btn btn-sm btn-primary" type="button" id="search-btn">Найти</button>
+                      </div>
+                    </div>
+                    <div id="employee-card" class="card mt-5 d-none">
+                        <div class="card-header">
+                            Сотрудник
+                        </div>
+                        <div class="card-body">
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Табельный номер</span>
+                                </div>
+                                <input class="form-control" name="tabn" id="tabn" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Фамилия</span>
+                                </div>
+                                <input class="form-control" name="surname" id="surname" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Имя</span>
+                                </div>
+                                <input class="form-control" name="name" id="name" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Отчество</span>
+                                </div>
+                                <input class="form-control" name="patronymic" id="patronymic" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Пол</span>
+                                </div>
+                                <input class="form-control" name="gender" id="gender" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Должность</span>
+                                </div>
+                                <input class="form-control" name="position" id="position" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Отдел</span>
+                                </div>
+                                <input class="form-control" name="department" id="department" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Дата найма</span>
+                                </div>
+                                <input type="date" class="form-control" name="date_n" id="date_n" readonly>
+                            </div>
+                            <div class="input-group input-group-sm mb-2">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text">Оклад</span>
+                                </div>
+                                <input type="number" min="0" step=".01" class="form-control" name="salary" id="salary">
+                            </div>
+                            <button class="btn btn-sm btn-primary mb-2" id="update-btn">Обновить</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
